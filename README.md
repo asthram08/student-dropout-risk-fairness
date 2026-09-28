@@ -30,7 +30,7 @@ app/ Streamlit app
 
 ## Status
 - [x] Setup and first look at the data
-- [ ] Exploration (SQL + charts)
+- [x] Exploration (SQL + charts)
 - [ ] Models
 - [ ] Fairness check
 - [ ] Outreach plan
@@ -39,6 +39,7 @@ app/ Streamlit app
 ## Limitations
 - The data has no race column, so the model can't be checked for fairness by race.
 - The data comes from one school in Portugal, so results may not apply to US colleges.
+- Enrolled students (18%) were still in school when the data was collected, so their final outcome is unknown. I counted them as "not dropout," but some may leave later.
 
 ## Sources
 - Realinho, V., Vieira Martins, M., Machado, J., & Baptista, L. (2021). Predict Students' Dropout and Academic Success. UCI Machine Learning Repository. https://doi.org/10.24432/C5MC89
