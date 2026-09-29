@@ -37,6 +37,11 @@ The strongest warning signs are early academic trouble and money trouble. Studen
 | At enrollment | Random forest | 0.757 | 0.701 | 0.605 | 0.824 |
 | After semester 1 | **Logistic regression** | **0.860** | **0.806** | **0.768** | **0.913** |
 | After semester 1 | Random forest | 0.837 | 0.782 | 0.730 | 0.900 |
+| After semester 1 | Decision tree | 0.827 | 0.803 | 0.702 | 0.867 |
+| After semester 1 | KNN (k=15) | 0.821 | 0.514 | 0.880 | 0.855 |
+| After semester 1 | Neural network (Keras) | 0.855 | 0.739 | 0.795 | 0.907 |
+
+- A Keras neural network didn't beat logistic regression, and its loss curve showed overfitting after about 10 epochs ([notebook 06](notebooks/06_more_models.ipynb)).
 
 - The baseline shows why accuracy alone misleads: 68% accuracy while catching zero dropouts.
 - Even at enrollment, the model ranks students fairly well (AUC 0.836), but with more false alarms. Semester 1 results are the biggest boost.
