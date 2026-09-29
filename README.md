@@ -2,7 +2,7 @@
 
 **A college advising office can only reach out to a limited number of students each semester. Who should they help first, and is the AI that decides fair?**
 
-**Live app:** [student-dropout-risk-fairness.streamlit.app](https://student-dropout-risk-fairness.streamlit.app/) · **Notebooks:** [explore](notebooks/01_explore.ipynb) · [model](notebooks/02_model.ipynb) · [fairness](notebooks/03_fairness.ipynb) · [outreach](notebooks/04_outreach.ipynb)
+**Live app:** [student-dropout-risk-fairness.streamlit.app](https://student-dropout-risk-fairness.streamlit.app/) · **Notebooks:** [explore](notebooks/01_explore.ipynb) · [model](notebooks/02_model.ipynb) · [fairness](notebooks/03_fairness.ipynb) · [outreach](notebooks/04_outreach.ipynb) · [fairness fix](notebooks/05_fairness_fix.ipynb) · [more models](notebooks/06_more_models.ipynb)
 
 ## Key results
 - **Top 10% works:** contacting the 88 highest-risk students (10% of the test set) reaches **31% of all dropouts, vs. 10% at random**. 87 of those 88 really dropped out.
@@ -117,7 +117,7 @@ streamlit run app/app.py    # run the app locally
 ## Project structure
 ```
 data/        dataset (CC BY 4.0) and data dictionary
-notebooks/   01 explore, 02 model, 03 fairness, 04 outreach plan
+notebooks/   01 explore, 02 model, 03 fairness, 04 outreach plan, 05 fairness fix, 06 more models
 charts/      all charts used in this README
 app/         Streamlit app
 ```
