@@ -43,6 +43,7 @@ The strongest warning signs are early academic trouble and money trouble. Studen
 - The simpler logistic regression beat the random forest, and it's easier to explain to advisors.
 
 ### 4. Is it fair?
+
 At the chosen cutoff, overall 22% of students who stayed were wrongly flagged (false alarms), and 12% of dropouts were missed. But errors are not spread evenly:
 
 ![Fairness by group](charts/7_fairness.png)
@@ -53,6 +54,8 @@ At the chosen cutoff, overall 22% of students who stayed were wrongly flagged (f
 - **Why:** SHAP shows the model relies most on semester 1 courses passed and tuition, but it also uses gender and age directly.
 
 ![Top drivers (SHAP)](charts/8_shap_top_drivers.png)
+
+**Fix tested:** removing gender, age, and 3 age-proxy columns cut the age false alarm gap from 21.7 to 13.4 points and the gender gap from 13.1 to 3.9, while catching 251 dropouts vs. 249. See [05_fairness_fix](notebooks/05_fairness_fix.ipynb).
 
 ### 5. Who should the college help first, and how?
 Ranking students by risk makes a small outreach budget go much further than random outreach.
