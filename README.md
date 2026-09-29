@@ -2,6 +2,8 @@
 
 **A college advising office can only reach out to a limited number of students each semester. Who should they help first, and is the AI that decides fair?**
 
+**Live app:** [Try it here](https://student-dropout-risk-fairness.streamlit.app/)
+
 ## Why this matters
 Advisors have limited time, so colleges increasingly use prediction tools to decide which students to contact. These tools can help, but they can also do harm. In 2023, The Markup found that Wisconsin's Dropout Early Warning System labeled many students "high risk" who went on to graduate, and its false alarms fell much more heavily on Black and Hispanic students.
 
@@ -31,10 +33,10 @@ app/ Streamlit app
 ## Status
 - [x] Setup and first look at the data
 - [x] Exploration (SQL + charts)
-- [ ] Models
-- [ ] Fairness check
-- [ ] Outreach plan
-- [ ] Streamlit app
+- [x] Models
+- [x] Fairness check
+- [x] Outreach plan
+- [x] Streamlit app
 
 ## Limitations
 - The data has no race column, so the model can't be checked for fairness by race.
