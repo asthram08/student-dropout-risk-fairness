@@ -10,7 +10,7 @@
 ## How to get it
 1. Go to the UCI link above and click **Download**.
 2. Unzip the file in your Downloads folder.
-3. Move `data.csv` into this `data/` folder. It is not in the repo because of `.gitignore`.
+3. data.csv is included in this repo (allowed under CC BY 4.0 with credit) so the Streamlit app can run online.
 
 Note: the file uses semicolons, so load it with `pd.read_csv('data.csv', sep=';')`. Some column names have extra spaces or tabs, so clean them with `df.columns = df.columns.str.strip()`.
 
