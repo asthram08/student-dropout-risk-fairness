@@ -99,10 +99,6 @@ I picked the cutoff (0.35) by lowest total cost, not highest accuracy. At that c
 - Unpaid tuition may be a sign a student is already leaving, not only a cause.
 - Some groups are small (26 international students in the test set), so their results aren't reliable.
 
-## Next steps
-- Test removing gender and age as features, or using different cutoffs by group, to see if fairness gaps shrink.
-- Try clustering to check the rule-based segments.
-
 ## How to run
 ```bash
 git clone https://github.com/asthram08/student-dropout-risk-fairness.git
